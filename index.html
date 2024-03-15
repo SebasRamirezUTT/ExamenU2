@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFL ToDo App</title>
+</head>
+<body>
+    <h1>NFL ToDo App</h1>
+    <img src="NFL2.jpg" style: width="400px" height="400px"/>
+    <div>
+        <label for="options">Selecciona una opción:</label>
+        <select id="options" onchange="handleOptionChange()">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="showAllIDs">Lista de todos los pendientes (solo IDs)</option>
+            <option value="showAllIDsAndTitles">Lista de todos los pendientes (IDs y Titles)</option>
+            <option value="showUncompletedTasks">Lista de todos los pendientes sin resolver (ID y Title)</option>
+            <option value="showCompletedTasks">Lista de todos los pendientes resueltos (ID y Title)</option>
+            <option value="showIDsAndUserIDs">Lista de todos los pendientes (IDs y userID)</option>
+            <option value="showCompletedTasksWithUserIDs">Lista de todos los pendientes resueltos (ID y userID)</option>
+            <option value="showUncompletedTasksWithUserIDs">Lista de todos los pendientes sin resolver (ID y userID)</option>
+        </select>
+    </div>
+    <div id="output">
+    </div>
+    <script src="app.js"></script>
+    <script src="sw.js"></script>
+</body>
+</html>
